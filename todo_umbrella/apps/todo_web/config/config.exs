@@ -16,6 +16,9 @@ config :todo_web, TodoWeb.Endpoint,
   render_errors: [view: TodoWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: TodoWeb.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :phoenix, :template_engines,
+  eex: TodoWeb.Components.Engine
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

@@ -41,6 +41,8 @@ defmodule TodoWeb do
       import TodoWeb.ErrorHelpers
       import TodoWeb.Gettext
       alias TodoWeb.Router.Helpers, as: Routes
+
+      import TodoWeb.Components.ViewHelpers
     end
   end
 
